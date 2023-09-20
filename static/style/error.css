@@ -1,0 +1,48 @@
+@font-face {
+    font-family: Light;
+    src: url("../assets/fonts/segoeuil.ttf");
+}
+body{
+    margin: 0;
+}
+main{
+    align-items: center;
+    display: flex;
+    height: 100vh;
+}
+.video-container {
+  position: fixed;
+  z-index: -1;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+}
+
+.video-container video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+}
+main section.error{
+    margin: auto;
+}
+main section.error hr{
+    border: 0;
+    width: 90px;
+    height: 3px;
+    background-color: white;
+    border-radius: 20px;
+}
+main section.error h1{
+    font-family: Light, sans-serif;
+    font-size: 3.5rem;
+    color: white;
+    margin: 0;
+}

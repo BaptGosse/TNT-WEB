@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style/tv.css')}}" type="text/css">
+        <meta name="msapplication-TileColor" content="#B8412D">
+        <meta name="theme-color" content="#B8412D">
+        <meta name="author" content="Baptiste Gosselin">
+        <link rel="icon" type="image/png" href="{{ url_for('static', filename='assets/images/favicon.png')}}">
+        <title>Baptiste Gosselin - TNT</title>
+        <script src="{{ url_for('static', filename='js/changeChannel.js') }}" defer></script>
+    </head>
+    <body>
+        <main>
+            <div class="video-container">
+                <video autoplay muted loop>
+                    <source src="{{ url_for('static', filename='assets/videos/background.mp4')}}" type="video/mp4">
+                </video>
+            </div>
+            <section class="tnt-player">
+                <div>
+                    <iframe src="https://www.youtube.com/embed/MVPTGNGiI-4"></iframe>
+                </div>
+            </section>
+            <section class="channel-list-computer">
+                <table>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <button id="1" class="channel">
+                                    <img src="{{ url_for('static', filename='assets/images/channels/tf1.png')}}">
+                                </button>
+                            </td>
+                            <td>
+                                <button id="2" class="channel">
+                                    <img src="{{ url_for('static', filename='assets/images/channels/france-2.png')}}">
+                                </button>
+                            </td>
+                            <td>
+                                <button id="3" class="channel">
+                                    <img src="{{ url_for('static', filename='assets/images/channels/france-3.png')}}">
+                                </button>
+                            </td>
+                            <td>
+                                <button id="4" class="channel">
+                                    <img src="{{ url_for('static', filename='assets/images/channels/canal.png')}}">
+                                </button>
+                            </td>
+                            <td>
+                                <button id="5" class="channel">
+                                    <img src="{{ url_for('static', filename='assets/images/channels/france-5.png')}}">
+                                </button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <button id="6" class="channel">
+                                    <img src="{{ url_for('static', filename='assets/images/channels/m6.png')}}">
+                                </button>
+                            </td>
+                            <td>
+                                <button id="7" class="channel">
+                                    <img src="{{ url_for('static', filename='assets/images/channels/arte.png')}}">
+                                </button>
+                            </td>
+                            <td>
+                                <button id="8" class="channel">
+                                    <img src="{{ url_for('static', filename='assets/images/channels/c8.png')}}">
+                                </button>
+                            </td>
+                            <td>
+                                <button id="9" class="channel">
+                                    <img src="{{ url_for('static', filename='assets/images/channels/w9.png')}}">
+                                </button>
+                            </td>
+                            <td>
+                                <button id="10" class="channel">
+                                    <img src="{{ url_for('static', filename='assets/images/channels/tmc.png')}}">
+                                </button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <button id="11" class="channel">
+                                    <img src="{{ url_for('static', filename='assets/images/channels/tfx.png')}}">
+                                </button>
+                            </td>
+                            <td>
+                                <button id="12" class="channel">
+                                    <img src="{{ url_for('static', filename='assets/images/channels/nrj-12.png')}}">
+                                </button>
+                            </td>
+                            <td>
+                                <button id="13" class="channel">
+                                    <img src="{{ url_for('static', filename='assets/images/channels/la-chaine-parlementaire.png')}}">
+                                </button>
+                            </td>
+                            <td>
+                                <button id="14" class="channel">
+                                    <img src="{{ url_for('static', filename='assets/images/channels/france-4.png')}}">
+                                </button>
+                            </td>
+                            <td>
+                                <button id="15" class="channel">
+                                    <img src="{{ url_for('static', filename='assets/images/channels/bfmtv.png')}}">
+                                </button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <button id="16" class="channel">
+                                    <img src="{{ url_for('static', filename='assets/images/channels/cnews.png')}}">
+                                </button>
+                            </td>
+                            <td>
+                                <button id="17" class="channel">
+                                    <img src="{{ url_for('static', filename='assets/images/channels/cstar.png')}}">
+                                </button>
+                            </td>
+                            <td>
+                                <button id="18" class="channel">
+                                    <img src="{{ url_for('static', filename='assets/images/channels/gulli.png')}}">
+                                </button>
+                            </td>
+                            <td>
+                                <button id="19" class="channel">
+                                    <img src="{{ url_for('static', filename='assets/images/channels/tf1-series-films.png')}}">
+                                </button>
+                            </td>
+                            <td>
+                                <button id="20" class="channel">
+                                    <img src="{{ url_for('static', filename='assets/images/channels/l-equipe.png')}}">
+                                </button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <button id="21" class="channel">
+                                    <img src="{{ url_for('static', filename='assets/images/channels/6ter.png')}}">
+                                </button>
+                            </td>
+                            <td>
+                                <button id="22" class="channel">
+                                    <img src="{{ url_for('static', filename='assets/images/channels/rmc-story.png')}}">
+                                </button>
+                            </td>
+                            <td>
+                                <button id="23" class="channel">
+                                    <img src="{{ url_for('static', filename='assets/images/channels/rmc-decouverte.png')}}">
+                                </button>
+                            </td>
+                            <td>
+                                <button id="24" class="channel">
+                                    <img src="{{ url_for('static', filename='assets/images/channels/cherie-25.png')}}">
+                                </button>
+                            </td>
+                            <td>
+                                <button id="25" class="channel">
+                                    <img src="{{ url_for('static', filename='assets/images/channels/lci-la-chaine-info.png')}}">
+                                </button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <button id="26" class="channel">
+                                    <img src="{{ url_for('static', filename='assets/images/channels/franceinfo.png')}}">
+                                </button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+            <section class="channel-list-mobile">
+                <table>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <button id="1" class="channel">
+                                    <img src="{{ url_for('static', filename='assets/images/channels/tf1.png')}}">
+                                </button>
+                            </td>
+                            <td>
+                                <button id="2" class="channel">
+                                    <img src="{{ url_for('static', filename='assets/images/channels/france-2.png')}}">
+                                </button>
+                            </td>
+                            <td>
+                                <button id="3" class="channel">
+                                    <img src="{{ url_for('static', filename='assets/images/channels/france-3.png')}}">
+                                </button>
+                            </td>
+                            <td>
+                                <button id="4" class="channel">
+                                    <img src="{{ url_for('static', filename='assets/images/channels/canal.png')}}">
+                                </button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <button id="5" class="channel">
+                                    <img src="{{ url_for('static', filename='assets/images/channels/france-5.png')}}">
+                                </button>
+                            </td>
+                            <td>
+                                <button id="6" class="channel">
+                                    <img src="{{ url_for('static', filename='assets/images/channels/m6.png')}}">
+                                </button>
+                            </td>
+                            <td>
+                                <button id="7" class="channel">
+                                    <img src="{{ url_for('static', filename='assets/images/channels/arte.png')}}">
+                                </button>
+                            </td>
+                            <td>
+                                <button id="8" class="channel">
+                                    <img src="{{ url_for('static', filename='assets/images/channels/c8.png')}}">
+                                </button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <button id="9" class="channel">
+                                    <img src="{{ url_for('static', filename='assets/images/channels/w9.png')}}">
+                                </button>
+                            </td>
+                            <td>
+                                <button id="10" class="channel">
+                                    <img src="{{ url_for('static', filename='assets/images/channels/tmc.png')}}">
+                                </button>
+                            </td>
+                            <td>
+                                <button id="11" class="channel">
+                                    <img src="{{ url_for('static', filename='assets/images/channels/tfx.png')}}">
+                                </button>
+                            </td>
+                            <td>
+                                <button id="12" class="channel">
+                                    <img src="{{ url_for('static', filename='assets/images/channels/nrj-12.png')}}">
+                                </button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <button id="13" class="channel">
+                                    <img src="{{ url_for('static', filename='assets/images/channels/la-chaine-parlementaire.png')}}">
+                                </button>
+                            </td>
+                            <td>
+                                <button id="14" class="channel">
+                                    <img src="{{ url_for('static', filename='assets/images/channels/france-4.png')}}">
+                                </button>
+                            </td>
+                            <td>
+                                <button id="15" class="channel">
+                                    <img src="{{ url_for('static', filename='assets/images/channels/bfmtv.png')}}">
+                                </button>
+                            </td>
+                            <td>
+                                <button id="16" class="channel">
+                                    <img src="{{ url_for('static', filename='assets/images/channels/cnews.png')}}">
+                                </button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <button id="17" class="channel">
+                                    <img src="{{ url_for('static', filename='assets/images/channels/cstar.png')}}">
+                                </button>
+                            </td>
+                            <td>
+                                <button id="18" class="channel">
+                                    <img src="{{ url_for('static', filename='assets/images/channels/gulli.png')}}">
+                                </button>
+                            </td>
+                            <td>
+                                <button id="19" class="channel">
+                                    <img src="{{ url_for('static', filename='assets/images/channels/tf1-series-films.png')}}">
+                                </button>
+                            </td>
+                            <td>
+                                <button id="20" class="channel">
+                                    <img src="{{ url_for('static', filename='assets/images/channels/l-equipe.png')}}">
+                                </button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <button id="21" class="channel">
+                                    <img src="{{ url_for('static', filename='assets/images/channels/6ter.png')}}">
+                                </button>
+                            </td>
+                            <td>
+                                <button id="22" class="channel">
+                                    <img src="{{ url_for('static', filename='assets/images/channels/rmc-story.png')}}">
+                                </button>
+                            </td>
+                            <td>
+                                <button id="23" class="channel">
+                                    <img src="{{ url_for('static', filename='assets/images/channels/rmc-decouverte.png')}}">
+                                </button>
+                            </td>
+                            <td>
+                                <button id="24" class="channel">
+                                    <img src="{{ url_for('static', filename='assets/images/channels/cherie-25.png')}}">
+                                </button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <button id="25" class="channel">
+                                    <img src="{{ url_for('static', filename='assets/images/channels/lci-la-chaine-info.png')}}">
+                                </button>
+                            </td>
+                            <td>
+                                <button id="26" class="channel">
+                                    <img src="{{ url_for('static', filename='assets/images/channels/franceinfo.png')}}">
+                                </button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </main>
+    </body>
+</html>
